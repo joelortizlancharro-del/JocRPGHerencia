@@ -3,6 +3,15 @@ public class Orc extends PersonatgeHerencia{
     public Orc(String name, int age, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, ArmaHerencia actualWeapon, double health, double mana){
         super(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma, actualWeapon, health, mana);
         setStatsOrc(strength, constitution);
+
+        weapons.add(new ArmaHerencia("Iron Sword", false, 48, "Sword"));   
+
+        weapons.add(new ArmaHerencia("Hunter Bow", false, 90, "Bow"));          
+
+        weapons.add(new ArmaHerencia("Apprentice Staff", false, 47, "Staff"));  
+
+        weapons.add(new ArmaHerencia("Woodcutter Axe", false, 42, "Axe"));     
+        weapons.add(new ArmaHerencia("Battle Axe", false, 45, "Axe"));        
     }
 
     public void setStatsOrc(int strength, int constitution){
