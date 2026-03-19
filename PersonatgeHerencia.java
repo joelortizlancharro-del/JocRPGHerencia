@@ -2,24 +2,24 @@ import java.util.ArrayList;
 
 public class PersonatgeHerencia {
 
-    private int strength;
-    private int dexterity;
-    private int constitution;
-    private int intelligence;
-    private int wisdom;
-    private int charisma;
-    private double health;
-    private double mana;
-    private String name;
-    private int age;
-    private String race;
-    private ArrayList<ArmaHerencia> weapons = new ArrayList<>();
-    private ArmaHerencia actualWeapon;
+    protected int strength;
+    protected int dexterity;
+    protected int constitution;
+    protected int intelligence;
+    protected int wisdom;
+    protected int charisma;
+    protected double health;
+    protected double mana;
+    protected String name;
+    protected int age;
+    protected String race;
+    protected ArrayList<ArmaHerencia> weapons = new ArrayList<>();
+    protected ArmaHerencia actualWeapon;
 
-    public PersonatgeHerencia(String name, int age, String race, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, ArmaHerencia actualWeapon, double health, double mana){
+    public PersonatgeHerencia(String name, int age, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, ArmaHerencia actualWeapon, double health, double mana){
         this.name = name;
         this.age = age;
-        this.race = race;
+        //this.race = race;
         this.strength = strength;
         this.dexterity = dexterity;
         this.constitution = constitution;
@@ -90,8 +90,13 @@ public class PersonatgeHerencia {
 
      public void setConstitution(int constitution){
         this.constitution = constitution;
+        
+    }
+
+    public void setHealt(int constitution){
         this.health = this.constitution*50;
     }
+
 
     public int getConstitution(){
         return this.constitution;
@@ -99,7 +104,11 @@ public class PersonatgeHerencia {
 
     public void setIntelligence(int intelligence){
         this.intelligence = intelligence;
-         this.mana = this.intelligence*30;
+         
+    }
+
+    public void setMana(int intelligence){
+        this.mana = this.intelligence*30;
     }
 
     public void setDamage(double damage){

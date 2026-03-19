@@ -150,7 +150,7 @@ public class jocHerencia {
                 System.out.println("Left " + pointsToCharacter + " points \n");
 
                 if(pointsToCharacter == 0){
-                    PersonatgeHerencia personatge = new PersonatgeHerencia(name, age, race, strength, dexterity, constitution, intelligence, wisdom, charisma, null, constitution, intelligence);
+                    PersonatgeHerencia personatge = new PersonatgeHerencia(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma, null, constitution, intelligence);
                     arrayPersonatge.add(personatge);
                     System.out.println("Here the stats of your character!");
                     System.out.println(arrayPersonatge.get((arrayPersonatge.size()-1)).toString());
