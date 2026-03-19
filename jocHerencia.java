@@ -150,8 +150,23 @@ public class jocHerencia {
                 System.out.println("Left " + pointsToCharacter + " points \n");
 
                 if(pointsToCharacter == 0){
-                    PersonatgeHerencia personatge = new PersonatgeHerencia(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma, null, constitution, intelligence);
-                    arrayPersonatge.add(personatge);
+                    if(race.equalsIgnoreCase("human")){
+                        Huma personatge = new Huma(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma, null, wisdom, charisma);
+                        arrayPersonatge.add(personatge);
+                    }
+                    else if(race.equalsIgnoreCase("elf")){
+                        Elf personatge = new Elf(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma, null, wisdom, charisma);
+                        arrayPersonatge.add(personatge);
+                    }
+                    else if(race.equalsIgnoreCase("dwarf")){
+                        Nan personatge = new Nan(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma, null, wisdom, charisma);
+                        arrayPersonatge.add(personatge);
+                    }
+                    else {
+                        Orc personatge = new Orc(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma, null, wisdom, charisma);
+                        arrayPersonatge.add(personatge);
+                    }
+
                     System.out.println("Here the stats of your character!");
                     System.out.println(arrayPersonatge.get((arrayPersonatge.size()-1)).toString());
                         

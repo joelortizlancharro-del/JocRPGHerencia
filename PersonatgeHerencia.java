@@ -12,14 +12,12 @@ public class PersonatgeHerencia {
     protected double mana;
     protected String name;
     protected int age;
-    protected String race;
     protected ArrayList<ArmaHerencia> weapons = new ArrayList<>();
     protected ArmaHerencia actualWeapon;
 
     public PersonatgeHerencia(String name, int age, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, ArmaHerencia actualWeapon, double health, double mana){
         this.name = name;
         this.age = age;
-        //this.race = race;
         this.strength = strength;
         this.dexterity = dexterity;
         this.constitution = constitution;
@@ -62,14 +60,6 @@ public class PersonatgeHerencia {
 
     public int getAge(){
         return this.age;
-    }
-
-    public void setRace(String race){
-        this.race = race;
-    }
-
-    public String getRace(){
-        return this.race;
     }
 
     public void setStrength(int strength){
@@ -207,7 +197,7 @@ public class PersonatgeHerencia {
     public String toString(){
 
        String info;
-       info = " Name:" + name + "\n Age:" + age + "\n Race:" + race + 
+       info = " Name:" + name + "\n Age:" + age +
         "\n Strength:" + strength + "\n Dexterity:" + dexterity + 
         "\n Constitution:" + constitution + "\n Intelligence:" + intelligence + 
         "\n Wisdom:" + wisdom + "\n Charisma:" + charisma + "\n Health:" + health + "\n Mana:" + mana;

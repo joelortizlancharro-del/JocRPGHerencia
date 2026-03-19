@@ -46,10 +46,10 @@ public class Huma extends PersonatgeHerencia{
         }
 
         if(super.getCharisma() == 20){
-            super.setWisdom(wisdom);
+            super.setCharisma(charisma);
         }
         else{
-            super.setWisdom(wisdom + 1);
+            super.setCharisma(charisma + 1);
         }
     }
     
