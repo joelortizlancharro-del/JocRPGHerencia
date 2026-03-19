@@ -2,10 +2,10 @@ public class Huma extends PersonatgeHerencia{
 
     public Huma(String name, int age, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, ArmaHerencia actualWeapon, double health, double mana){
         super(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma, actualWeapon, health, mana);
-        setStats(strength, dexterity, constitution, intelligence, wisdom, charisma, health, mana);
+        setStatsHuma(strength, dexterity, constitution, intelligence, wisdom, charisma, health, mana);
     }
 
-    public void setStats(int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, double health, double mana){
+    public void setStatsHuma(int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, double health, double mana){
         if(super.getStrength() == 20){
             super.setStrength(strength);
         }
